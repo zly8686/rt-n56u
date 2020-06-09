@@ -115,7 +115,7 @@ filters:
   url: https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt
   name: 乘风
   id: 3
-- enabled: true
+- enabled: false
   url: https://raw.fastgit.org/jasonandy999/hosts/master/yy/hotst
   name: hosts
   id: 4
