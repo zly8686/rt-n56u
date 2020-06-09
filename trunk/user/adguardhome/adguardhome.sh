@@ -83,7 +83,8 @@ dns:
   - 223.6.6.6
   - 180.76.76.76
   - 114.114.114.114
-  all_servers: true
+  all_servers: false
+  fastest_addr: true
   allowed_clients: []
   disallowed_clients: []
   blocked_hosts: []
@@ -93,7 +94,7 @@ dns:
   safebrowsing_enabled: false
   resolveraddress: ""
   upstream_dns:
-  - 127.0.0.1#6053
+  - 127.0.0.1:6053
 tls:
   enabled: false
   server_name: ""
