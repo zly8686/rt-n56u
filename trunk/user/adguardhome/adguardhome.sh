@@ -93,9 +93,7 @@ dns:
   safebrowsing_enabled: false
   resolveraddress: ""
   upstream_dns:
-  - https://search.233py.com/dns-query
-  - https://hk-dns.233py.com/dns-query
-  - https://dgz.rubyfish.cn/dns-query
+  - 127.0.0.1#6053
 tls:
   enabled: false
   server_name: ""
