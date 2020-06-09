@@ -84,7 +84,7 @@ dns:
   - 180.76.76.76
   - 114.114.114.114
   all_servers: false
-  fastest_addr: true
+  fastest_addr: false
   allowed_clients: []
   disallowed_clients: []
   blocked_hosts: []
