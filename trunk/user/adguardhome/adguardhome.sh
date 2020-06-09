@@ -73,13 +73,16 @@ dns:
   protection_enabled: true
   filtering_enabled: true
   blocking_mode: nxdomain
-  blocked_response_ttl: 10
+  blocked_response_ttl: 60
   querylog_enabled: true
-  ratelimit: 20
+  ratelimit: 0
   ratelimit_whitelist: []
   refuse_any: true
   bootstrap_dns:
-  - 1.1.1.1
+  - 119.28.28.28
+  - 223.6.6.6
+  - 180.76.76.76
+  - 114.114.114.114
   all_servers: true
   allowed_clients: []
   disallowed_clients: []
@@ -90,7 +93,9 @@ dns:
   safebrowsing_enabled: false
   resolveraddress: ""
   upstream_dns:
-  - 1.1.1.1
+  - https://search.233py.com/dns-query
+  - https://hk-dns.233py.com/dns-query
+  - https://dgz.rubyfish.cn/dns-query
 tls:
   enabled: false
   server_name: ""
@@ -101,20 +106,20 @@ tls:
   private_key: ""
 filters:
 - enabled: true
-  url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
-  name: AdGuard Simplified Domain Names filter
+  url: https://gitee.com/privacy-protection-tools/anti-ad/raw/master/easylist.txt
+  name: anti-AD
   id: 1
 - enabled: true
-  url: https://adaway.org/hosts.txt
-  name: AdAway
+  url: https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt
+  name: 乘风视频
   id: 2
 - enabled: true
-  url: https://hosts-file.net/ad_servers.txt
-  name: hpHosts - Ad and Tracking servers only
+  url: https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt
+  name: 乘风
   id: 3
 - enabled: true
-  url: https://www.malwaredomainlist.com/hostslist/hosts.txt
-  name: MalwareDomainList.com Hosts List
+  url: https://raw.fastgit.org/jasonandy999/hosts/master/yy/hotst
+  name: hosts
   id: 4
 user_rules: []
 dhcp:
@@ -129,8 +134,7 @@ dhcp:
 clients: []
 log_file: ""
 verbose: false
-schema_version: 3
-
+schema_version: 4
 EEE
 	chmod 755 "$adg_file"
 fi
@@ -139,7 +143,7 @@ fi
 dl_adg(){
 logger -t "AdGuardHome" "下载AdGuardHome"
 #wget --no-check-certificate -O /tmp/AdGuardHome.tar.gz https://github.com/AdguardTeam/AdGuardHome/releases/download/v0.101.0/AdGuardHome_linux_mipsle.tar.gz
-curl -k -s -o /tmp/AdGuardHome/AdGuardHome --connect-timeout 10 --retry 3 https://cdn.jsdelivr.net/gh/chongshengB/rt-n56u/trunk/user/adguardhome/AdGuardHome
+curl -k -s -o /tmp/AdGuardHome/AdGuardHome --connect-timeout 10 --retry 3 https://cdn.jsdelivr.net/gh/jasonandy999/app/adg/v0.102.0/AdGuardHome
 if [ ! -f "/tmp/AdGuardHome/AdGuardHome" ]; then
 logger -t "AdGuardHome" "AdGuardHome下载失败，请检查是否能正常访问github!程序将退出。"
 nvram set adg_enable=0
