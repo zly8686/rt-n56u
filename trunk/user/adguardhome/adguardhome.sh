@@ -117,7 +117,7 @@ filters:
   name: 乘风
   id: 3
 - enabled: false
-  url: https://raw.fastgit.org/jasonandy999/hosts/master/yy/hotst
+  url: https://raw.fastgit.org/zly8686/hosts/master/hosts
   name: hosts
   id: 4
 user_rules:
