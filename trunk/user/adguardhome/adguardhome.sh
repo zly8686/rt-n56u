@@ -120,7 +120,8 @@ filters:
   url: https://raw.fastgit.org/jasonandy999/hosts/master/yy/hotst
   name: hosts
   id: 4
-user_rules: []
+user_rules:
+- dvdhd.me##.tbad_1200_100
 dhcp:
   enabled: false
   interface_name: ""
