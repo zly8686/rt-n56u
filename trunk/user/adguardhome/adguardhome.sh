@@ -122,6 +122,7 @@ filters:
   id: 4
 user_rules:
 - dvdhd.me##.tbad_1200_100
+- @@||cdn.jsdelivr.net
 dhcp:
   enabled: false
   interface_name: ""
