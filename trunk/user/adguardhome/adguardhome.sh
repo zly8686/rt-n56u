@@ -83,7 +83,7 @@ dns:
   - 223.6.6.6
   - 180.76.76.76
   - 114.114.114.114
-  all_servers: true
+  all_servers: false
   allowed_clients: []
   disallowed_clients: []
   blocked_hosts: []
