@@ -83,8 +83,7 @@ dns:
   - 223.6.6.6
   - 180.76.76.76
   - 114.114.114.114
-  all_servers: false
-  fastest_addr: false
+  all_servers: true
   allowed_clients: []
   disallowed_clients: []
   blocked_hosts: []
@@ -122,7 +121,6 @@ filters:
   id: 4
 user_rules:
 - dvdhd.me##.tbad_1200_100
-- @@||cdn.jsdelivr.net
 dhcp:
   enabled: false
   interface_name: ""
