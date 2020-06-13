@@ -14,3 +14,8 @@
 !  支持通配符*和？
 !  -------------------------------------------------------------------------------------------
 
+@@||pv.sohu.com
+@@||p.ssl.qhimg.com
+@@||cdn.jsdelivr.net
+||js.mintehao.com/default.js^$important
+||17kyun.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
