@@ -1,4 +1,4 @@
-name: Padavan_K2P0612_0613
+name: Padavan_K2P_nano0612_0614
 
 on: 
   release:
@@ -33,9 +33,9 @@ jobs:
         cd toolchain-mipsel
         sh dl_toolchain.sh
         mkdir -p /opt/images/
-    - name: K2P20200610
+    - name: K2P_nano202006120614
       env:
-        TNAME: "K2P"
+        TNAME: "K2P_nano"
       run: |
         cwd=`pwd`
         CONFIG_TOOLCHAIN_DIR=${cwd//\//\\\/}\\/toolchain-mipsel
